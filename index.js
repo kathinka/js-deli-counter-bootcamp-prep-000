@@ -24,30 +24,22 @@ function nowServing (katzDeliLine){
 
 }
 
+var katzDeliLine, text,res,queue;
+katzDeliLine = ["britt", "tom", "ben", "nils"];
+
 function currentLine (katzDeliLine){
+queue = katzDeliLine.length;
+text = "The line is currently: ";
+  
+for (var i = 0; i < queue; i++) {
    
-    for (var i=0; katzDeliLine.length>i; i++){
+   text+=(i+1) + ". " +katzDeliLine[i]+ ", ";
+   res = text.slice(0,-2)+".";
+}
+console.log(text);
+console.log(res);
+return (res);
+}
     
-    if (katzDeliLine.lenght === 0){
-    return("The line is currently empty.")
-    }
-  else{
-     return ("The line is currently: "+${i}+". "+ ${katzDeliLine}+",");
-  }
-    }
-}
-/*
-function currentLine (katzDeliLine){
-const iterator = katzDeliLine.values();
-countMax = katzDeliLine.length;
-count = 0;
-
-
-  return("The line is currently empty.")
-}
-for (const value of iterator) {
-      return ("The line is currently: " + value);
-      count++;
-    }
-  }
-*/
+  //  if (katzDeliLine.lenght === 0){
+  //  return("The line is currently empty.")
