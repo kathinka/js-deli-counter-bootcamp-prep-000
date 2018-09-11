@@ -32,7 +32,9 @@ queue = katzDeliLine.length;
 text = "The line is currently: ";
   
 for (var i = 0; i < queue; i++) {
-   
+   if (katzDeliLine.lenght === 0){
+   return("The line is currently empty.") ;
+   else{
    text+=(i+1) + ". " +katzDeliLine[i]+ ", ";
    res = text.slice(0,-2);
 }
