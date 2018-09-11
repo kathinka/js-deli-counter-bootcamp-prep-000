@@ -34,7 +34,7 @@ text = "The line is currently: ";
 for (var i = 0; i < queue; i++) {
    
    text+=(i+1) + ". " +katzDeliLine[i]+ ", ";
-   res = text.slice(0,-2)+".";
+   res = text.slice(0,-2);
 }
 console.log(text);
 console.log(res);
