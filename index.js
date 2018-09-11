@@ -28,14 +28,15 @@ var katzDeliLine, text,res,queue;
 katzDeliLine = ["britt", "tom", "ben", "nils"];
 
 function currentLine (katzDeliLine){
-  
-if (katzDeliLine.lenght === 0){
+
+queue = katzDeliLine.length;
+text = "The line is currently: ";
+
+if (queue === 0){
    return("The line is currently empty."); }
    
    else{
-queue = katzDeliLine.length;
-text = "The line is currently: ";
- 
+
 for (var i = 0; i < queue; i++) {
    text+=(i+1) + ". " +katzDeliLine[i]+ ", ";
    res = text.slice(0,-2);
@@ -43,7 +44,6 @@ for (var i = 0; i < queue; i++) {
 console.log(text);
 console.log(res);
 return (res);
-
 } 
 }
   //  if (katzDeliLine.lenght === 0){
