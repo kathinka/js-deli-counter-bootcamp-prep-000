@@ -42,6 +42,6 @@ console.log(text);
 console.log(res);
 return (res);
 }
-    
+}    
   //  if (katzDeliLine.lenght === 0){
   //  return("The line is currently empty.")
